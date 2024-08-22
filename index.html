@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Tailwind & DaisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ba22909762.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bg-[#F7F7F7]">
+        <!-- Nav section -->
+         <nav class=" w-10/12 mx-auto">
+        <div class="navbar justify-between">
+            <div>
+                <div class="-rotate-45">
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-1"></i>
+                </div>
+                  <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
+            </div>
+           
+           
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold">Home</a></li>
+                <li><a class="text-[#737373]"> Services</a></li>
+                <li><a class="text-[#737373]">Portfolio</a></li>
+                <li><a class="text-[#737373]"> Blogs</a></li>
+                <li><a class="text-[#737373]">Contact Us</a></li>
+              </ul>
+            </div> 
+
+            <div class="gap-3">
+                <a><i class="bg-[#FFFFFF] rounded-full p-2 fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="bg-[#FFFFFF] rounded-full p-2 fa-solid fa-cart-shopping"></i></a>
+                  <a class="btn bg-[#ABEF5F] rounded-full sm:flex hidden">Book Consult 
+                    <div class="-rotate-45">
+                    <i class="fa-solid fa-arrow-right text-white bg-[#1C1C1C] rounded-full p-1"></i>
+                </div></a>
+            </div>
+              
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+</body>
+</html>
