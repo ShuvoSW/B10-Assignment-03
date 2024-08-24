@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Tailwind & DaisyUi cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,15 +18,19 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily: {
+                inter: ['Inter', 'sans-serif' ]
               }
             }
           }
         }
-      </script>
+    </script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/ba22909762.js" crossorigin="anonymous"></script>
+  
 </head>
-<body>
+<body class="font-inter">
     <header class="bg-[#F7F7F7]">
         <!-- Nav section start-->
          <nav class=" w-10/12 mx-auto">
@@ -267,7 +275,7 @@ modern sophistication, featuring weathered wood, sleek metal accents.
       <!-- Uniq section end  -->
 
             <!-- Discuss section start -->
-          <div class="m-2" style="background-image: url(./assets/bg.jpg);">
+          <div class="m-2 mt-8" style="background-image: url(./assets/bg.jpg);">
             <div class="w-12/12 mx-auto mb-10 pt-8">
               <div class="text-center">
                 <button class=" bg-[#D4F7AE] p-3 pb-1 pt-1 rounded-full font-bold"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</button>
@@ -314,6 +322,40 @@ modern sophistication, featuring weathered wood, sleek metal accents.
                 <!-- Main section end -->
     </main>
 
-    <footer></footer>
+    <footer class="bg-[#1C1C1C]">
+      <!-- Footer section start -->
+      <div class=" w-10/12 mx-auto pb-10 pt-8 lg:mb-10">
+        <div class="navbar flex  flex-col justify-center items-center text-white">
+            <div>
+                <div class="-rotate-45">
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-1"></i>
+                </div>
+                  <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
+            </div>
+           
+           <h1 class="text-white text-center">
+            The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+           </h1>
+            <div class="navbar-center ">
+              <ul class="menu menu-horizontal px-1 lg:flex grid grid-rows ">
+                <li><a class="text-white">Home</a></li>
+                <li><a class="text-white"> Services</a></li>
+                <li><a class="text-white">Portfolio</a></li>
+                <li><a class="text-white"> Blogs</a></li>
+                <li><a class="text-white">Contact Us</a></li>
+              </ul>
+            </div> 
+
+            <div class="gap-3  ">
+                  <a class="btn bg-[#ABEF5F] text-white rounded-full sm:flex">Book Consult 
+                    <div class="-rotate-45">
+                    <i class="fa-solid fa-arrow-right text-white bg-[#1C1C1C] rounded-full p-1"></i>
+                </div></a>
+            </div>
+              
+            
+          </div>
+        </div>
+    </footer>
 </body>
 </html>
